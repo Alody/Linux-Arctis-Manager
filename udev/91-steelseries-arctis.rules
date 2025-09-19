@@ -24,8 +24,8 @@ KERNEL=="event*", SUBSYSTEM=="input", SUBSYSTEMS=="usb", ATTRS{idProduct}=="12e0
 SUBSYSTEM=="usb", ATTRS{idVendor}=="1038", ATTRS{idProduct}=="12e5", MODE="0666"
 KERNEL=="event*", SUBSYSTEM=="input", SUBSYSTEMS=="usb", ATTRS{idProduct}=="12e5", ATTRS{idVendor}=="1038", TAG+="symlink", SYMLINK+="steelseries/arctis", TAG+="systemd"
 
-# Arctis Nova 7X
+# Arctis Nova 7X Wireless
 SUBSYSTEM=="usb", ATTRS{idVendor}=="1038", ATTRS{idProduct}=="2258", MODE="0666"
-SUBSYSTEM=="usb", ATTRS{idVendor}=="1038", ATTRS{idProduct}=="2258", TAG+="symlink", SYMLINK+="steelseries/arctis", TAG+="systemd"
+KERNEL=="event*", SUBSYSTEM=="input", SUBSYSTEMS=="usb", ATTRS{idVendor}=="1038", ATTRS{idProduct}=="2258", TAG+="symlink", SYMLINK+="steelseries/arctis", TAG+="systemd"
 
 LABEL="local_end"
